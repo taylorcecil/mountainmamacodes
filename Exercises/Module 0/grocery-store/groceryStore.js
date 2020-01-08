@@ -1,4 +1,4 @@
-/*var shopper = {
+var shopper = {
     groceryList: "Taylor's Shopping",
     groceryCart: ["kale", "avocado", "tamales"],
     quantityOfItems: 2,
@@ -8,7 +8,7 @@
     }                                                    
 }
 
-shopper.preferredStore()*/
+shopper.preferredStore()
 
 
 

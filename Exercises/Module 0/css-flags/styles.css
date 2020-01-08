@@ -1,0 +1,132 @@
+body {
+    background-color: #f5eee1;
+}
+.flags {
+    display: block;
+    width: 320px;
+    height: 220px;
+    margin: 50px;
+}
+
+#france-blue {
+    background-color: #002295;
+}
+
+#france-white {
+    background-color: white;
+}
+
+#france-red {
+    background-color: #ed2939;
+}
+
+.myFrance {
+    height: 100%;
+    width: 32.5%;
+    display: inline-block;
+}
+
+#germany-black {
+    background-color: black;
+}
+
+#germany-red {
+    background-color: #dd0000;
+}
+
+#germany-yellow {
+    background-color: #ffce02;
+}
+
+.myGermany {
+    height: 32.5%;
+    width: 100%;
+}
+
+#swedish {
+    background-color: #006aa6;
+    position: 
+}
+
+#swedishH {
+    height: 25%;
+    width: 100%;
+    background-color: #fecb00;
+    position: relative;
+    top: 37.5%;
+}
+
+#swedishV {
+    height: 100%;
+    width: 16%;
+    background-color: #fecb00;
+    position: relative;
+    left: 32%;
+    bottom: 25%;
+}
+
+#maldivesGreen {
+    background-color: #007d3a;
+    height: 60%;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    top: 20%;
+}
+
+#maldivesRed {
+    background-color: #d20e33;
+}
+
+#maldivesMoon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: -12px 0px 0 0 white;
+    position: relative;
+    top: 20%;
+    left: 45%;
+}
+
+#tongaMain {
+    background-color: #c10000;    
+}
+
+#tongaWhite {
+    background-color: white;
+    width: 40%;
+    height: 50%;
+}
+
+#tongaV {
+    background-color: #c10000;
+    width: 25%;
+    height: 70%;
+    position: relative;
+    left: 50px;
+    top: -10px;
+}
+
+#tongaH {
+    background-color: #c10000;
+    width: 70%;
+    height: 25%;
+    position: relative;
+    top: 40px;
+    left: 20px; 
+}
+
+#japanWhite {
+    background-color: white;
+}
+
+#japanRed {
+    background-color: #bc002d;
+    width: 50%;
+    height: 70%;
+    border-radius: 50%;
+    position: relative;
+    left: 25%;
+    top: 15%;
+}
+
