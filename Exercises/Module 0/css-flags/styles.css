@@ -130,3 +130,34 @@ body {
     top: 15%;
 }
 
+#nigerMain {
+    background-color: #e05204;
+}
+
+#nigerWhite {
+    background-color: white;
+    position: relative;
+    height: 35%;
+    width: 100%;
+    top: 36%;
+}
+
+#nigerCircle {
+    background-color: #e05204;
+    width: 18%;
+    height: 70%;
+    border-radius: 50%;
+    position: relative;
+    left: 42%;
+    top: 15%;
+}
+
+#nigerGreen {
+    background-color: #0ab02b;
+    position: relative;
+    height: 32%;
+    width: 100%;
+    top: 36%;
+}
+
+
