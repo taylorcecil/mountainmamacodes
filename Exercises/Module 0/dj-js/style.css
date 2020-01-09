@@ -1,3 +1,25 @@
-.classy {
-     background-color: blue;
+body {
+     background-image: url("1.jpg");
+     -webkit-background-size: cover;
+}
+
+#classy {
+     font-size: 50px;
+     width: 500px;
+     height: 500px;
+     color: white;
+     background-color: #f331f7;
+     margin: auto;
+     margin-top: 12%;
+     text-align: center;
+     border: 20px solid white;
+     border-radius: 280px;
+}
+
+#pTag {
+     position: relative;
+     top: 32%;
+     font-weight: bold;
+     font-family: 'Sedgwick Ave Display', cursive;
+     letter-spacing: 7px;
 }
