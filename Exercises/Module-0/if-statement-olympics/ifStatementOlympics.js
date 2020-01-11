@@ -261,6 +261,14 @@ function largest(num1, num2, num3){
     }
 }
 
+
+
+
+function assessment (array){
+    if()
+}
+
+
 largest(6, 7, 8)
 console.log(largest(6, 7, 8))
 
@@ -341,6 +349,19 @@ for(var i = 0; i < dogs.length; i++ ){
     }
 }
 
+
+
+
+
+dogs = ['willow', 'jade', 'milo']
+
+function coding (array){
+    // return dogs.length[2]
+    return array[array.length -1]
+}
+
+
+coding(dogs)
 
 
 

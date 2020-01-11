@@ -45,6 +45,7 @@ function scroll() {
 }
 
 
+
 document.addEventListener("keydown", keyColor)
 function keyColor(event) {
     console.log(event)

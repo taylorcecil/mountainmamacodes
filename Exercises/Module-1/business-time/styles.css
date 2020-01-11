@@ -1,0 +1,47 @@
+.mainPage {
+    background-image: url(rings.jpg);
+    -webkit-background-size: cover;
+}
+
+.aboutPage {
+    background-color: #978a65;
+    color: white;
+    display: inline-block;
+}
+
+img {
+    max-width: 25%;
+    max-height: auto; 
+    margin: auto;
+    display: block;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #978a65;
+}
+
+ul {
+    width: 740px;
+    margin: auto;
+    display: block;
+}
+
+ul > li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+}
+
+#taylor {
+    margin: 120px;
+} 
+
+
