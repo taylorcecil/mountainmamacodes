@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="aboutPage">
+<body class="about-page">
     <div>
-        <a href="index.html"><img src="logo.png" alt="Taylor Cecil Photography"></a>
+        <a href="index.html"><img class="logo" src="logo.png" alt="Taylor Cecil Photography"></a>
         <ul>
             <li><a href="gallery.html">GALLERY</a></li>
             <li><a href="about.html">ABOUT</a></li>
@@ -18,10 +18,18 @@
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </div>
-    <div id="taylor">
-        <img src="taylor.jpg" alt="Photographer">
-        <p>
-            <h1>MEET THE PHOTOGRAPHER</h1>
+
+    <div class="about-me-photo">
+        <img id="taylor-photo" src="taylor.jpg" alt="Photographer">
+    </div>
+
+    <div id="about-text-container">
+
+        <div>
+            <h1>MEET THE PHOTOGRAPHER</h1></br></br><hr style="border: 2px solid white;"><br>
+        </div>
+        <div>
+            <p>
             Hi! I'm Taylor. I'm a Salt Lake City based wedding, engagement, and elopement photographer.
             I spend my time outdoors, reading, practicing yoga, and loving on my chocolate lab pups, Jade + Willow.
             I've been doing wedding photography and portraits for 5 years. 
@@ -31,8 +39,9 @@
             meaningful moments to hold onto for the rest of your life. 
             I'm all about photographing in a timeless, genuine way. 
             I want you to look back at your photos and feel as if you're reliving those special moments, 
-            and all of their <strong>imperfectly perfect, and authentic details.</strong> 
-        </p>
+            and all of their <i><strong>imperfectly perfect, and authentic details.</strong></i>
+            </p>
+        </div>
     </div>
 
     <script src="app.js"></script>

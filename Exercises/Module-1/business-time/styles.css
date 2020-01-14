@@ -1,15 +1,18 @@
-.mainPage {
+.main-page {
     background-image: url(rings.jpg);
     -webkit-background-size: cover;
 }
 
-.aboutPage {
+.about-page, .gallery-page, .investment-page {
     background-color: #978a65;
     color: white;
     display: inline-block;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    width: -webkit-fill-available;
 }
 
-img {
+.logo {
     max-width: 25%;
     max-height: auto; 
     margin: auto;
@@ -26,7 +29,7 @@ a:hover {
 }
 
 ul {
-    width: 740px;
+    width: 600px;
     margin: auto;
     display: block;
 }
@@ -34,7 +37,7 @@ ul {
 ul > li {
     list-style-type: none;
     display: inline-block;
-    font-size: 22px;
+    font-size: 15px;
     margin: 20px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 4px;
@@ -44,4 +47,105 @@ ul > li {
     margin: 120px;
 } 
 
+#taylor-photo {
+    max-width: 30%;
+    -webkit-box-shadow: 20px 20px 0px #ccc;
+    margin-top: 100px;
+    
+}
 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+#about-text {
+    width: 45%;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+#about-text-container {
+    display: flex;
+    height: 80%;
+    width: 40%;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    flex-direction: column;
+    display: inline-block;
+    justify-content: space-evenly;
+    
+}
+
+.about-me-photo {
+    display: inline;
+    margin-left: 182px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    width: 80%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    gap: 50px;
+}
+
+
+#line {
+    border: 2px solid white;
+    width: 80%;
+    margin-top: 80px;
+}
+
+.investment-div {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: auto;
+    width: 90%;
+    height: auto;
+    margin-top: 100px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.invest-details {
+    height: auto;
+    width: 100%;
+    line-height: 32px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#invest-photo {
+    margin: auto;
+    position: relative;
+    display: grid;
+    margin-top: 68px;
+    width: 70%;
+}
+
+#form {
+    display: grid;
+    margin: auto;
+    width: 60%;
+    height: auto;
+    margin-top: 100px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 4px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    color: #000;
+    font-size: 12px;
+    line-height: normal;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
