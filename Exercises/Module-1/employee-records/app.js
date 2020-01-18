@@ -6,7 +6,8 @@ function Employee(name, jobTitle, salary){
     this.salary = salary
     this.status = "Full Time"
     this.printEmployeeForm = function(){
-        console.log("Name: " + this.name + ", Job Title: " + this.jobTitle + ", Salary: " + this.salary, ", Status: " + this.status)
+        // console.log("Name: " + this.name + ", Job Title: " + this.jobTitle + ", Salary: " + this.salary, ", Status: " + this.status)
+        console.log(`Name: ${this.name}, Job Title: ${this.jobTitle}, Salary: ${this.salary}, Status: ${this.status}`)
     }
 }
 
@@ -26,3 +27,7 @@ employees.push(Olivia)
 
 
 console.log(employees)
+
+
+
+    
