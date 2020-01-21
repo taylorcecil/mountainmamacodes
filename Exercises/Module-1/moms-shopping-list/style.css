@@ -1,0 +1,67 @@
+body {
+    background-image: url(grocery.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.main {
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    background-color: rosybrown;
+    border-radius: 30px;
+}
+
+#add-item {
+    border: 1px solid black;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.label {
+    margin: 10px;
+}
+
+#list {
+    padding: 0px;
+    flex-direction: column;
+    display: flex;
+}
+
+#list > li{
+    list-style-type: none;
+    margin: 10px auto;
+}
+
+#list div {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.delete-button {
+    color: red;
+}
+
+#submit-button:hover {
+    background-color: rosybrown;
+    border-radius: 4px;
+}
+
+hr {
+    height: 5px;
+    background-color: white;
+}
