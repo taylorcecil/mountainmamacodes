@@ -10,9 +10,6 @@ function submitItem(e) {
     const li = document.createElement("li")
     li.innerHTML = text
     shoppingList.appendChild(li)
-    const editButton = document.createElement("button")
-    editButton.innerHTML = "edit"
-    li.appendChild(editButton)
     const deleteButton = document.createElement("button")
     deleteButton.classList.add('delete-button')
     deleteButton.innerHTML = "X"

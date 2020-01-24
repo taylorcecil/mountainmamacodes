@@ -32,7 +32,7 @@ console.log(isDivisible(6, 8))
 console.log(isDivisible(24, 12))
 
 
-//Write a function that takes an array of words and a character and return each word that has that letter present.
+//Write a function that takes an array of words and a character and return each word that has that character present.
 
 function lettersWithStrings(arr, symbol){
     const finalArray = []
@@ -48,6 +48,6 @@ function lettersWithStrings(arr, symbol){
     return finalArray
 }
 
-var hello = ['hi', 'bye!', 'hola!']
+var hello = ['hi', 'bye', 'hola!']
 console.log(lettersWithStrings(hello, '!'))
 
