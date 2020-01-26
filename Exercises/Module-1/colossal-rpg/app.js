@@ -1,5 +1,7 @@
 const readline = require("readline-sync");
 
+// a hiker is hiking along a trail, he writes name in an entry book (capture name for later) , and he keeps hiking - hike(). while hiking, he has a 1/4 chance of being attacked by a wildEnemy() - WildEnemyOptions(). If a wildEnemy() appears, the hiker can choose to [1] attack or [2] run. If the hiker chooses to attack, thre will be a random amount of damage dealt between a min and a max. If the hiker decides to run, there will be a 50% chance of escaping. after the hiker either attacks or runs, the enemy will attack back for a random damage amount. if the hiker kills the wild enemy, then the hiker is assigned some HP (health points) and an item that is stored in the inventory. If the enemy kills the hiker, the console will print a death message and the game will end. At any time during the game, the hiker can enter 'print' into the console, and the console will print the hikers name, HP, and items in their inventory.
+
 function nameInput(){
     const name = "Hello hiker!\nIt's a beautiful, overcast day and you are 863 miles from home on the Appalachian Trail. You have come across an entry book to write your name in.\nWhat is your name? " 
     const userName = readline.question(name)
@@ -83,9 +85,4 @@ funciton inventory(){
 function gainLoot(){
     // if/else? statement to push loot item into array of inventory.... inventoryArr on line 10
 }
-
-
-
-
-
 
