@@ -7,6 +7,8 @@ function nameInput(){
 
 nameInput()
 
+inventoryArr = []
+
 function hike(){
     const userHikes = "Great! You've signed the entry book. Please enter a 'h' to keep hiking: "
     const hikeInput = readline.question(userHikes)
@@ -45,10 +47,45 @@ function wildEnemy(){
 
     if(random === 1){
         console.log(enemies[Math.floor(Math.random() * enemies.length)])
-        const attackRun = "You have come across a wild enemy! Are you going to attack it, or run? "
+        const attackRun = "You have come across a wild enemy! Are you going to:\n\n[1] attack\n[2] run? "
         const userInput = readline.question(attackRun)
+        if(userInput === 1){
+            const damageMin = Math.ceil(damageMin)
+            const damageMax = Math.floor(damageMax)
+            const damageRandom = Math.floor(Math.random() * (max - min)) + min 
+            return damageRandom
+        } else if(userInput === 2){
+            const willDie = Math.random() < 0.5
+            const willOutrun = Math.random() > 0.5
+            const runOutcome  = 
+            // ?????? what the heck am I doing here?
+            return runOutcome
+        } else {
+            console.log('Please select either 1 or 2')
+            wildEnemy()
+        }
+    }
+    enemyRevenge()
+}
+
+function enemyRevenge(){
+    // after the player attacks or runs, the enemy attacks back for a random damage amount
+
+}
+
+funciton inventory(){
+    if(user input???  = 'print'){
+        console.log(`${userName}, you have ${hp} HP's, and have ${inventoryArr} in your inventory`)
+        // have not created values for hp
     }
 }
+
+function gainLoot(){
+    // if/else? statement to push loot item into array of inventory.... inventoryArr on line 10
+}
+
+
+
 
 
 
