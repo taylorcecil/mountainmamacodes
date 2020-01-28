@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
+
+body {
+    margin: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 0px;
+    grid-template-rows: max-content;
+  }
+
+#grid1 {
+    background-image: url(zen.jpg);
+    background-size: cover;
+    grid-column: 1/3;
+    height: 300px;
+    margin: 0px;
+}
+
+#grid2 {
+    background-color: #3c6d71;
+    height: 300px;
+    margin: 0px;
+}
+
+#grid3 {
+    height: auto;
+    grid-column: 1/3;
+}
+
+#grid4 {
+    background-color: #e5ede8;
+    height: auto;
+}
+
+#grid5 {
+    background-color: #bed7c8;
+    grid-column: 1/3;
+    height: auto;
+}
+
+#grid6 {
+    background-color: #b2cdbc;
+    height: auto;
+}
+
+#grid7 {
+    height: auto;
+    grid-column: 1/3;
+}
+
+#grid8 {
+    height: auto;
+    background-color: #e5ede8;
+}
+
+#grid9 {
+    height: 280px;
+    grid-column: 1/-1;
+    background-image: url(zen.jpg);
+    background-size: cover;
+}
+
+#grid10 {
+    background-color: #134246;
+    height: 150px;
+    grid-column: 1/-1;
+}
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 33px;
+    width: 300px;
+    margin-top: 120px;
+    margin-left: 30px;
+    color: #6e5e4f;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 300px;
+    margin-left: 30px;
+    color: #6e5e4f;
+    font-style: italic;
+    font-size: 18px;
+}
+
+#header {
+    width: 340px;
+}
+
+button {
+    height: 60px;
+    width: 320px;
+    opacity: 0.3;
+    margin-left: 70px;
+    margin-top: 109px;
+    background-color:rgba(255,255,255, 0.9);
+    font-size: 20px;
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: rgba(225,225,225,0.5);
+}
+
+h3 {
+    color: #2e484c;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+p {
+    line-height: 2;
+    font-family: serif;
+    color: #2e484c;
+    font-size: 16px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#grid9 h2 {
+    font-size: 24px;
+    width: 80%;
+    margin: auto;
+    margin-top: 84px;
+    color: #6e5e4f;
+    line-height: 1.5;
+    padding: 20px;
+    background: rgba(300,365,255,0.4);
+    font-family: 'Julius Sans One', sans-serif;
+    font-style: normal;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .grid-container {
+        display: inline-block;
+    }
+
+    #header {
+        width: auto;
+    }
+
+    h1 {
+        margin-top: 0px;
+    }
+
+    #grid1 {
+        height: 200px;
+        width: auto;
+    }
+
+    #grid2 {
+        height: 100px;
+        width: auto;
+    }
+
+    #grid3 {
+        width: auto;
+        height: auto;
+    }
+    
+    #grid9{
+        height: auto;
+    }
+
+    button {
+        margin-top: 20px;
+        position: relative;
+        width: 60%;
+        left: 50%;
+        margin-left: -30%;
+    }
+
+   h3 {
+       padding: 20px;
+   }
+
+   p {
+       padding-bottom: 20px;
+   }
+
+   #grid9 h2 {
+       margin: auto;
+       width: 100%;
+   }
+
+}
