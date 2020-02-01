@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+.operation {
+    height: 100px;
+    margin: 20px;
+    border: 3px solid #4d4d4d;
+    border-radius: 10px;
+}
+
+h1, body {
+    font-family: 'Orbitron', sans-serif;
+    color: #4d4d4d;
+}
+
+body {
+    font-size: 20px;
+}
+
+#calculator {
+    text-align: center;
+}
+
+.input {
+    height: 50px;
+    width: 50px;
+    border: 3px solid #4d4d4d;
+    background-color: white;
+    border-radius: 10px;
+}
+
+form {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.submitButton {
+    background-color: white;
+    border: 3px solid #4d4d4d;
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+}
+
+#add {
+    background-color: #a3999d; 
+}
+
+#subtract {
+    background-color: #c0b6b2;
+}
+
+#multiply {
+    background-color: #dbd2cb;
+}

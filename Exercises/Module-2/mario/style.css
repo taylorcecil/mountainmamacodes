@@ -1,0 +1,60 @@
+body {
+    align-items: center;
+    background-image: url(mario.jpg);
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px;
+}
+
+#pest {
+    display: inline-block;
+    margin-top: 4%;
+    margin-left: 34%;
+
+}
+
+#control {
+    display: inline-block;
+    margin-top: 4%;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 0px;
+    grid-template-rows: max-content;
+}
+
+#goombaPNG {
+    margin-left: 70px;
+    margin-top: 130px;
+    width: 50%;
+}
+
+#bobPNG {
+    width: 68%;
+    height: auto;
+    margin-top: 115px;
+    margin-left: 18%;
+}
+
+#cheepPNG {
+    width: 238%;
+    margin-top: 120px;
+    margin-left: 70px;
+}
+
+footer {
+    height: auto;
+    margin-top: 15%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+#totalPriceContainer {
+    width: 100px; 
+    height: 50px;
+    background: white;
+}

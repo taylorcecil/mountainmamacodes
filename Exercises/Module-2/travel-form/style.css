@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+
+body {
+    margin: 0px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Bowlby One SC', cursive;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+#main {
+    background-image: url(mexico.jpg);
+    background-size: cover;
+    height: 800px;
+}
+
+#formDiv {
+    width: 50%;
+    height: 50%;
+    background-color: #a97053;
+    opacity: 0.8;
+    display: inline-block;
+    margin-top: 4%;
+    border: 8px solid white;
+    text-align: left;
+}
+
+#airline {
+    width: 50%;
+    height: auto;
+    background-color: #a97053;
+    opacity: 0.8;
+    display: inline-block;
+    margin-top: 8%;
+    border: 8px solid white;
+}
+
+form {
+    margin-top: 40px;
+    margin-left: 32%;
+    color: white;
+    line-height: 1.5;
+}
+
+button {
+    color: white;
+    background-color: #3b8082;
+    border: 2px solid white;
+}
