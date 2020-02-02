@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Sigmar+One&display=swap");
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #e5ede8;
+  margin: auto;
+  margin-bottom: 15px;
+  border: 10px solid white;
+}
+
+body {
+  background-color: #bed7c8;
+}
+
+#box1 {
+  grid-column: 1/2;
+}
+
+#box1:hover {
+  background-color: #3c6d71;
+  border: 10px solid #3c6d71;
+  border-radius: 30px;
+}
+
+h1 {
+  color: white;
+  font-family: "Sigmar One", cursive;
+  font-size: 40px;
+  text-align: center;
+}
