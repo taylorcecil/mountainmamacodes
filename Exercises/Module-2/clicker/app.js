@@ -16,6 +16,9 @@ if( localStorage.getItem(STORAGEKEY)) {
     amountOfClicks = 0
 }
 
+// same thing: "essentially"
+// var count = localStorage.getItem('count') ? localStorage.getItem('count') : 0
+
 const countBox = document.getElementById("countBox")
 
 countBox.innerHTML = amountOfClicks
@@ -43,6 +46,4 @@ button.addEventListener("click", clearButton)
 
 // window.setTimeout(()=> alert(`You have clicked ${amountOfClicks} times, cool!`), 10000)
 
-// same thing: "essentially"
-// var count = localStorage.getItem('count') ? localStorage.getItem('count') : 0
 

@@ -1,13 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 
+body {
+    background-image: linear-gradient(to bottom right, #dc8665, #eeb362);
+    height: 650px;
+    user-select: none;
+}
 
 #countBox {
     height: 300px;
     width: 300px; 
-    background-color: seagreen;
-    border: 3px solid olivedrab;
+    background-color: #cf7572;
+    border: 20px solid floralwhite;
     position: relative;
-    top: 200px;
-    left: 47%;
-    font-size: 50px;
+    top: 5px;
+    left: 38%;
+    font-size: 250px;
     text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: floralwhite;
+}
+
+#zeroButton {
+    background-color: floralwhite;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+    color: #cf7572;
+    text-transform: uppercase;
+    height: 40px;
+    width: 110px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
+    color: floralwhite;
+    font-size: 80px;
+    margin-left: 38%;
+    font-family: 'Bebas Neue', cursive;
 }
