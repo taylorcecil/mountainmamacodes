@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>To-do Project</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div id="formContainer">
-      <h1>my to-do list</h1>
+      <h1 style="text-align: center;">my to-do list</h1>
       <br />
       <hr />
+    <div id="formDiv">
       <form name="myForm">
         <p>Add New Item:</p>
         <br /><br />
@@ -20,7 +22,11 @@
         <p>Description:</p>
         <input type="text" name="description" /><br /><br />
         <button id="submitButton">Submit</button>
+        <br />
+        
       </form>
+    </div>
+    <hr /><br />
     <div id="listContainer">
       <ul id="todoList"></ul>
     </div>
