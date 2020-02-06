@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+body {
+  background-image: url(desk.jpg);
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  width: auto;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+}
+
+#formContainer {
+  background-color: #cc993d;
+  opacity: 0.9;
+  border: 15px solid black;
+  height: 500px;
+  width: 600px;
+  margin: auto;
+  margin-top: 8%;
+  margin-bottom: 100px;
+}
+
+hr {
+  border: 3px solid black;
+  width: 80%;
+}
+
+input[name="addItemInput"] {
+}
+
+#submitButton {
+  background-color: black;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  height: 18px;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+form {
+  margin-top: 25px;
+}
+
+p {
+  display: inline-block;
+  margin: 5px;
+}
+
+#submitButton:hover {
+  background-color: #cc993d;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>To-do Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="formContainer">
+      <h1>my to-do list</h1>
+      <br />
+      <hr />
+      <form name="myForm">
+        <p>Add New Item:</p>
+        <br /><br />
+        <p>Title:</p>
+        <input type="text" name="title" /><br />
+        <p>Description:</p>
+        <input type="text" name="description" /><br /><br />
+        <button id="submitButton">Submit</button>
+      </form>
+    <div id="listContainer">
+      <ul id="todoList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
