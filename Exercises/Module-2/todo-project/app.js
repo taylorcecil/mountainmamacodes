@@ -71,11 +71,6 @@ const makeTodo = todo => {
     container.appendChild(newDescription);
     container.appendChild(updateButton);
 
-    // const updates = {
-    //   title: newTitle.value,
-    //   description: newDescription.value
-    // };
-
     const newTodo = updateButton.addEventListener("click", e => {
       axios
         .put(`https://api.vschool.io/taylor/todo/${todo._id}`, {
