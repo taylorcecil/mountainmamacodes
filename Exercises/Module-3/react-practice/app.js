@@ -46,3 +46,11 @@ function MyInfo() {
 }
 
 ReactDOM.render(<MyInfo />, document.getElementById("root"));
+
+
+$ npx create-react-app . //create new react file? terminal
+
+// componenet is a function, component name is capitalized 
+// calling a component in react ---> <ComponentName />
+// props are 'arguments' in react, they are objects
+// export default *appname
