@@ -1,0 +1,100 @@
+body {
+  margin: 0px;
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  margin: 0px;
+  color: white;
+  font-weight: 800;
+  font-size: 55px;
+  margin-top: 65px;
+}
+
+h2 {
+  color: black;
+  font-weight: 800;
+  font-size: 26px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+.header {
+  height: 354px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(home.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.headerContent {
+  z-index: 2;
+}
+
+.navbar {
+  color: white;
+  display: inline-block;
+  width: 100%;
+}
+
+ul {
+  color: white;
+  list-style: none;
+  display: inline-block;
+  margin-left: 32px;
+}
+
+li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h4 {
+  display: inline-block;
+  text-align: left;
+  margin-right: 17%;
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.blogSection {
+  width: 38%;
+  margin: auto;
+  text-align: left;
+  margin-top: 50px;
+  line-height: 1;
+}
+
+p {
+  font-size: 12px;
+  font-style: italic;
+  color: gray;
+  font-family: Lora, "Times New Roman", serif;
+}
+
+.subTitle {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+b {
+  color: black;
+}
+
+hr {
+  margin-top: 32px;
+  opacity: 0.2;
+}
