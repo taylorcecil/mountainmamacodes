@@ -12,8 +12,8 @@ class App extends Component {
         }
       ]
     };
-    this.handleChange = this.handleChange.bind(this);
-    this.addName = this.addName.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
+    // this.addName = this.addName.bind(this);
   }
 
   handleChange = e => {
@@ -21,25 +21,34 @@ class App extends Component {
     this.setState({
       [name]: value
     });
-    this.state.nameList.push(name);
   };
 
   addName = e => {
-    this.setState(prevState => {
-      return [
-        ...prevState.nameList,
-        (this.state.firstName, this.state.lastName)
-      ];
-    });
+    e.preventDefault();
+    console.log("hello");
+
+    const { firstName, lastName } = this.state;
+    this.setState({ namesList: [...this.state.names, firstName, lastName] });
+    this.state.names.push(this.state.firstName, this.state.lastName);
   };
 
+  // this.setState(prevState => {
+  //   return [...prevState.names, (this.state.firstName, this.state.lastName)];
+  // });
+  //   };
+
   render() {
+    const names = this.state.names.map(name => (
+      <li>
+        {this.state.firstName} {this.state.lastName}
+      </li>
+    ));
     return (
       <div>
         <form>
           <input
             type="text"
-            value={this.state.names.firstName}
+            value={this.state.firstName}
             name="firstName"
             placeholder="First Name"
             onChange={this.handleChange}
@@ -47,7 +56,7 @@ class App extends Component {
           <br />
           <input
             type="text"
-            value={this.state.names.lastName}
+            value={this.state.lastName}
             name="lastName"
             placeholder="Last Name"
             onChange={this.handleChange}
@@ -61,7 +70,7 @@ class App extends Component {
         <ol>
           <h2> Names: </h2>
           <br />
-          {this.state.nameList}
+          {names}
         </ol>
       </div>
     );
