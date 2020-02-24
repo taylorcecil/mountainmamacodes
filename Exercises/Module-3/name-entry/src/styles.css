@@ -1,0 +1,21 @@
+body {
+  margin-top: 20px;
+  text-align: center;
+}
+
+input {
+  width: 200px;
+  height: 40px;
+  border: 6px solid black;
+  margin: 10px;
+  text-align: center;
+}
+
+button {
+  border: 5px solid black;
+  margin-top: 8px;
+}
+
+ol {
+  padding: 0px;
+}
