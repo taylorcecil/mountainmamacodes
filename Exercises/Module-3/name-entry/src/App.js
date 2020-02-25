@@ -8,12 +8,15 @@ class App extends Component {
       names: [
         {
           firstName: "",
-          lastName: ""
+          lastName: "",
+          namesList: []
         }
       ]
     };
     // this.handleChange = this.handleChange.bind(this);
     // this.addName = this.addName.bind(this);
+    // double check that by using fat arrow functions, is the workaround for binding
+
   }
 
   handleChange = e => {
@@ -22,20 +25,33 @@ class App extends Component {
       [name]: value
     });
   };
-
+/// ********************************************************************
   addName = e => {
     e.preventDefault();
     console.log("hello");
 
     const { firstName, lastName } = this.state;
-    this.setState({ namesList: [...this.state.names, firstName, lastName] });
+    this.setState({ namesList: [...this.state.names, e.target.value, e.target.value] });
     this.state.names.push(this.state.firstName, this.state.lastName);
   };
+
 
   // this.setState(prevState => {
   //   return [...prevState.names, (this.state.firstName, this.state.lastName)];
   // });
   //   };
+
+  addName = e => {
+      e.preventDefault()
+      const { firstName, lastName } = this.state;
+      this.setState(prevState => {
+          return (
+            
+          )
+      })
+  }
+
+/// ********************************************************************
 
   render() {
     const names = this.state.names.map(name => (
