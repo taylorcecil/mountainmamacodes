@@ -1,19 +1,43 @@
 import React, { Component } from "react";
+import "./styles.css";
 
-class App extends React {
+class App extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      firstName: "",
+      lastName: "",
+      email: "",
+      dateOfBirth: "",
+      phone: "",
+      favoriteFood: "",
+      aboutMe: ""
+    };
   }
 
-  submitBadge = () => {};
+  submitBadge = e => {
+    e.preventDefault();
+    console.log("hi");
 
-  handleChange = () => {};
+    const {
+      firstName,
+      lastName,
+      email,
+      dateOfBirth,
+      phone,
+      favoriteFood,
+      aboutMe
+    } = this.state;
+
+    this.setState({});
+  };
+
+  handleChange = e => {};
 
   render() {
     return (
-      <div>
-        <form>
+      <div className="mainDiv">
+        <form className="infoForm">
           <input
             type="text"
             name="firstName"
@@ -28,19 +52,19 @@ class App extends React {
             onClick={this.handleChange}
           />
           <input
-            type="text"
+            type="email"
             name="email"
             placeholder="Email"
             onClick={this.handleChange}
           />
           <input
-            type="text"
-            name="birthPlace"
-            placeholder="Place of Birth"
+            type="date"
+            name="dateOfBirth"
+            placeholder="Date of Birth"
             onClick={this.handleChange}
           />
           <input
-            type="text"
+            type="number"
             name="phone"
             placeholder="Phone"
             onClick={this.handleChange}

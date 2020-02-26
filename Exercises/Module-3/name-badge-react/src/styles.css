@@ -1,0 +1,34 @@
+body {
+  margin: 50px;
+}
+
+input {
+  height: 30px;
+  text-align: left;
+  padding-left: 10px;
+  width: 150px;
+  border: 2px solid black;
+  display: block;
+  margin: auto;
+  margin-bottom: 12px;
+}
+
+button {
+  background-color: #3d97b8;
+  color: white;
+  font-size: 14px;
+  border-radius: 8px;
+  width: 80px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.infoForm {
+  display: grid;
+}
+
+.mainDiv {
+  border: 5px solid #3d97b8;
+  background-color: lightgray;
+  padding: 30px;
+}
