@@ -13,6 +13,17 @@ input {
   margin-bottom: 12px;
 }
 
+textarea {
+  height: 50px;
+  text-align: left;
+  padding-left: 10px;
+  width: 150px;
+  border: 2px solid black;
+  display: block;
+  margin: auto;
+  margin-bottom: 12px;
+}
+
 button {
   background-color: #3d97b8;
   color: white;
