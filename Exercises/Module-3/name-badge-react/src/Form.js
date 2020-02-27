@@ -10,28 +10,48 @@ class Form extends Component {
       dateOfBirth: "",
       phone: "",
       food: "",
-      aboutMe: ""
+      aboutMe: "",
+      addedContacts: []
     };
   }
+
+  handleChange = e => {
+    const { name, value } = e.target;
+    this.setState({
+      [name]: value
+    });
+  };
 
   submitBadge = e => {
     e.preventDefault();
     console.log("hi");
+    this.setState(prevState => {
+      const {
+        firstName,
+        lastName,
+        email,
+        dateOfBirth,
+        phone,
+        food,
+        aboutMe,
+        addedContacts
+      } = prevState;
 
-    const {
-      firstName,
-      lastName,
-      email,
-      dateOfBirth,
-      phone,
-      food,
-      aboutMe
-    } = this.state;
-
-    this.setState({});
+      return {
+        firstName: "",
+        lastName: "",
+        email: "",
+        dateOfBirth: "",
+        phone: "",
+        food: "",
+        aboutMe: "",
+        addedContacts: [
+          ...addedContacts,
+          { firstName, lastName, email, dateOfBirth, phone, food, aboutMe }
+        ]
+      };
+    });
   };
-
-  handleChange = e => {};
 
   render() {
     return (
@@ -39,46 +59,53 @@ class Form extends Component {
         <form className="infoForm">
           <input
             type="text"
+            value={this.state.firstName}
             name="firstName"
             placeholder="First Name"
-            onClick={this.handleChange}
+            onChange={this.handleChange}
           />
 
           <input
             type="text"
+            value={this.state.lastName}
             name="lastName"
             placeholder="Last Name"
-            onClick={this.handleChange}
+            onChange={this.handleChange}
           />
           <input
             type="email"
+            value={this.state.email}
             name="email"
             placeholder="Email"
-            onClick={this.handleChange}
+            onChange={this.handleChange}
           />
           <input
             type="date"
+            value={this.state.dateOfBirth}
             name="dateOfBirth"
             placeholder="Date of Birth"
-            onClick={this.handleChange}
+            onChange={this.handleChange}
           />
           <input
             type="number"
+            value={this.state.phone}
             name="phone"
             placeholder="Phone"
-            onClick={this.handleChange}
+            onChange={this.handleChange}
           />
           <input
             type="text"
+            value={this.state.food}
             name="food"
             placeholder="Favorite Food"
-            onClick={this.handleChange}
+            onChange={this.handleChange}
           />
           <textarea
             type="text"
+            value={this.state.aboutMe}
             name="aboutMe"
             placeholder="About Me"
-            onClick={this.handleChange}
+            onChange={this.handleChange}
           />
           <button onClick={this.submitBadge}>Submit</button>
         </form>
