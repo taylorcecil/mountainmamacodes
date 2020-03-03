@@ -46,7 +46,7 @@ class Form extends Component {
         food: "",
         aboutMe: "",
         addedContacts: [
-          ...addedContacts,
+          ...prevState.addedContacts,
           { firstName, lastName, email, dateOfBirth, phone, food, aboutMe }
         ]
       };
