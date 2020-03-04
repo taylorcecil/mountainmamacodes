@@ -6,13 +6,16 @@ export default class Badge extends Component {
     super();
   }
   render() {
+    const { props } = Form;
     return (
       <div className="badge">
-        <h1> Name Badge: </h1>
+        <h3> Connection </h3>
+        <br />
+        <hr /> <br />
         <p>
           Name:
           <br />
-          {this.props.firstName}
+          {props.firstName}
         </p>
         <br />
       </div>

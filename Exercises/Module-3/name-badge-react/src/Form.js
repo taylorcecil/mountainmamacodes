@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Badge from "./Badge";
+import hands from "./hands.png";
 
 class Form extends Component {
   constructor() {
@@ -10,8 +11,8 @@ class Form extends Component {
       email: "",
       dateOfBirth: "",
       phone: "",
-      food: "",
-      aboutMe: "",
+      jobTitle: "",
+      notes: "",
       addedContacts: []
     };
   }
@@ -33,8 +34,8 @@ class Form extends Component {
         email,
         dateOfBirth,
         phone,
-        food,
-        aboutMe,
+        jobTitle,
+        notes,
         addedContacts
       } = prevState;
 
@@ -44,11 +45,11 @@ class Form extends Component {
         email: "",
         dateOfBirth: "",
         phone: "",
-        food: "",
-        aboutMe: "",
+        jobTitle: "",
+        notes: "",
         addedContacts: [
           ...prevState.addedContacts,
-          { firstName, lastName, email, dateOfBirth, phone, food, aboutMe }
+          { firstName, lastName, email, dateOfBirth, phone, jobTitle, notes }
         ]
       };
     });
@@ -59,6 +60,12 @@ class Form extends Component {
       <>
         <div className="mainDiv">
           <form className="infoForm" onSubmit={this.submitBadge}>
+            <h3 className="newConnection">New Connection</h3>
+            <br />
+            <hr />
+            <br />
+            <img src={hands} className="hands"></img>
+            <br />
             <input
               type="text"
               value={this.state.firstName}
@@ -84,10 +91,12 @@ class Form extends Component {
               placeholder="Email"
               onChange={this.handleChange}
             />
+            <br />
             <input
               type="date"
               value={this.state.dateOfBirth}
               name="dateOfBirth"
+              className="DOB"
               minlength="3"
               placeholder="Date of Birth"
               onChange={this.handleChange}
@@ -102,18 +111,18 @@ class Form extends Component {
             />
             <input
               type="text"
-              value={this.state.food}
-              name="food"
+              value={this.state.jobTitle}
+              name="jobTitle"
               minlength="3"
-              placeholder="Favorite Food"
+              placeholder="Job Title"
               onChange={this.handleChange}
             />
             <textarea
               type="text"
               value={this.state.aboutMe}
-              name="aboutMe"
+              name="notes"
               minlength="3"
-              placeholder="About Me"
+              placeholder="Notes"
               onChange={this.handleChange}
             />
             <button>Submit</button>
