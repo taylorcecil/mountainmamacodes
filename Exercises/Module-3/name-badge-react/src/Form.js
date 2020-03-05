@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Badge from "./Badge";
+import Connections from "./Connections";
 import hands from "./hands.png";
 
 class Form extends Component {
@@ -128,7 +128,11 @@ class Form extends Component {
             <button>Submit</button>
           </form>
         </div>
-        {this.state.addedContacts.length > 0 ? <Badge /> : ""}
+        {this.state.addedContacts.length > 0 ? (
+          <Connections data={this.state.addedContacts} />
+        ) : (
+          ""
+        )}
       </>
     );
   }
