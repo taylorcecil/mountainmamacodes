@@ -62,7 +62,6 @@ class Form extends Component {
           <form className="infoForm" onSubmit={this.submitBadge}>
             <h3 className="newConnection">New Connection</h3>
             <br />
-            <hr />
             <br />
             <img src={hands} className="hands"></img>
             <br />
