@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+body {
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url(header.jpg);
+  -webkit-background-size: cover;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+}
+
+body {
+  margin: 0px;
+}
+
+#headerContent {
+  margin-top: 70px;
+  position: relative;
+}
+
+h1,
+h2 {
+  margin: auto;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  margin-top: -4px;
+  text-transform: none;
+  font-style: italic;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#skills {
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+#headshot {
+  width: 15%;
+  height: auto;
+  border-radius: 50%;
+  border: 4.5px solid white;
+  margin-bottom: 40px;
+}
+
+#downloadResume {
+  margin: auto;
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 3px;
+  display: inline-block;
+}
+
+#resumeLogo {
+  height: 20%;
+  margin-top: 14px;
+}
+
+hr {
+  border: 2px solid white;
+  width: 60%;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.fa-linkedin,
+.fa-envelope,
+.fa-github {
+  color: white;
+  margin: auto;
+  margin-bottom: 55px;
+  font-size: 28px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.fa-linkedin:hover,
+.fa-envelope:hover,
+.fa-github:hover {
+  color: #a5af94;
+  margin-top: -10px;
+  transition: ease;
+}
