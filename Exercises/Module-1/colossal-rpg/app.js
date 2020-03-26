@@ -76,7 +76,7 @@ function enemyRevenge(){
 }
 
 funciton inventory(){
-    if(user input???  = 'print'){
+    if(user input = 'print'){
         console.log(`${userName}, you have ${hp} HP's, and have ${inventoryArr} in your inventory`)
         // have not created values for hp
     }
