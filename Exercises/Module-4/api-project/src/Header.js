@@ -5,6 +5,7 @@ export default function Header() {
     <>
       <h1>COVID-19</h1>
       <h2>The Latest Coronavirus Statistics</h2>
+      <p>Data sourced from Johns Hopkins CSSE</p>
     </>
   );
 }
